@@ -7,33 +7,46 @@ assignees: ''
 
 ---
 
-dědí z případu užití: (Uveďte pouze v případě, že tento případ užití dědí z jiného nebo více jiných případů užití.)
+_dědí z_ případu užití: (Uveďte pouze v případě, že tento případ užití dědí z jiného nebo více jiných případů užití.)
 
-Aktéři
+## Aktéři
+
 [uveďte seznam aktérů]
 
-Související user stories
+## Související user stories
+
 [odkaz na uživatelské příběhy, které tento use case rozpracovává]
 
-Související diagramy
-![image](odkaz na SVG diagram případů užití) (viz [zdroj](odkaz na příslušný řádek zdrojového PlantUML souboru))
+## Související diagramy
 
-Předpoklady
-[uveďte předpodmínky]
+![image](odkaz na SVG diagram případů užití)
+_(viz [zdroj](odkaz na příslušný řádek zdrojového PlantUML souboru))_
 
-Základní tok (Basic Flow)
+## Předpoklady
+
+- [uveďte předpodmínky]
+
+## Základní tok (Basic Flow)
+
 N. [uveďte základní tok jako lineární sekvenci kroků]
 
-Alternativní toky (Alternative Flows)
-Na. [uveďte alternativu ke kroku N] Na.1. [uveďte alternativní tok jako lineární sekvenci kroků]
+## Alternativní toky (Alternative Flows)
 
-Výsledný stav (Postconditions)
-[uveďte výsledný stav]
+Na. [uveďte alternativu ke kroku N]
+  Na.1. [uveďte alternativní tok jako lineární sekvenci kroků]
 
-Aktivitní diagramy (volitelné pro komplexní průběhy)
-![image](odkaz na SVG aktivitního diagramu) (viz [zdroj](odkaz na PlantUML soubor))
+## Výsledný stav (Postconditions)
 
-Wireframy (volitelné pro komplexní UX flow)
+- [uveďte výsledný stav]
 
-Stavové diagramy (State Machine Diagrams) (volitelné pro komplexní průběhy)
-![image](odkaz na SVG stavového diagramu) (viz [zdroj](odkaz na PlantUML soubor))
+## Aktivitní diagramy (volitelné pro komplexní průběhy)
+
+![image](odkaz na SVG aktivitního diagramu)
+_(viz [zdroj](odkaz na PlantUML soubor))_
+
+## Wireframy (volitelné pro komplexní UX flow)
+
+## Stavové diagramy (State Machine Diagrams) (volitelné pro komplexní průběhy)
+
+![image](odkaz na SVG stavového diagramu)
+_(viz [zdroj](odkaz na PlantUML soubor))_
