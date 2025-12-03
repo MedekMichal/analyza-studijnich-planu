@@ -1,36 +1,39 @@
 ---
 name: Use Case Template
-about: Use this template to describe a functional requirement as a use case.
-title: 'UC-NNN: Use case title based on WHAT'
+about: Použijte tuto šablonu k popisu funkčního požadavku formou případu užití (use case).
+title: 'UC-NNN: Název případu užití založený na tom, co má být dosaženo (WHAT)'
 labels: use case
 assignees: ''
 
 ---
 
-inherits from use case (Use only when the use case inherits from another use case or use cases.)
+dědí z případu užití: (Uveďte pouze v případě, že tento případ užití dědí z jiného nebo více jiných případů užití.)
 
-Actors
-[list actors here]
+Aktéři
+[uveďte seznam aktérů]
 
-Related user stories
-[link user stories detailed by this use case]
+Související user stories
+[odkaz na uživatelské příběhy, které tento use case rozpracovává]
 
-Related diagrams
-![image](link a use case diagram SVG file with this use case) (see the [source](link the line of the diagram source PlantUML file))
+Související diagramy
+![image](odkaz na SVG diagram případů užití) (viz [zdroj](odkaz na příslušný řádek zdrojového PlantUML souboru))
 
-Preconditions
-[list preconditions here]
-Basic Flow
-N. [specify the basic flow here as a linear sequence of steps]
+Předpoklady
+[uveďte předpodmínky]
 
-Alternative Flows
-Na. [specify an alternative to step N] Na.1. [specify the alternative flow here as a linear sequence of steps]
+Základní tok (Basic Flow)
+N. [uveďte základní tok jako lineární sekvenci kroků]
 
-Postconditions
-[list postconditions here]
-Activity Diagrams (optional for complex use case flows)
-![image](link an activity diagram SVG file) (see the [source](link the diagram source PlantUML file))
+Alternativní toky (Alternative Flows)
+Na. [uveďte alternativu ke kroku N] Na.1. [uveďte alternativní tok jako lineární sekvenci kroků]
 
-Wireframes (optional for complex UX flow)
-State Machine Diagrams (optional for complex use case flows)
-![image](link a state machine diagram SVG file) (see the [source](link the diagram source PlantUML file))
+Výsledný stav (Postconditions)
+[uveďte výsledný stav]
+
+Aktivitní diagramy (volitelné pro komplexní průběhy)
+![image](odkaz na SVG aktivitního diagramu) (viz [zdroj](odkaz na PlantUML soubor))
+
+Wireframy (volitelné pro komplexní UX flow)
+
+Stavové diagramy (State Machine Diagrams) (volitelné pro komplexní průběhy)
+![image](odkaz na SVG stavového diagramu) (viz [zdroj](odkaz na PlantUML soubor))
