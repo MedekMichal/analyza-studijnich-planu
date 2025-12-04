@@ -1,0 +1,64 @@
+@startuml use-case-diagram
+
+left to right direction
+
+actor "Student" as AC_S
+actor "Nerozhodnutý student" as AC_NS
+actor "Rozhodnutý student" as AC_RS
+
+rectangle "RecSIS - Studijní plány" {
+    usecase "Upozornění na rekvizity\nve vlastním plánu" as UC_001
+    usecase "Vyhledávání plánů\npodle názvu" as UC_002
+    usecase "Vyhledávání plánů\npodle kódu" as UC_003
+    usecase "Filtrování plánů" as UC_004
+    usecase "Zobrazení plánu" as UC_005
+    usecase "Úvodní text u plánu" as UC_006
+    usecase "Kreditové statistiky\nu detailu plánu" as UC_007
+    usecase "Detail předmětu v zobrazeném\nstudijním plánu" as UC_008
+    usecase "Zobrazení rozdílů mezi\ndvěma plány" as UC_009
+    usecase "Zobrazení společných\npředmětů mezi plány" as UC_010
+    usecase "Vyhledávání plánů podle\npředmětů" as UC_011
+    usecase "Označení plánu za zvolený" as UC_012
+    usecase "Zobrazení statistik\no studentech plánu" as UC_013
+    usecase "Procházení hodnocení\na komentářů plánů" as UC_014
+    usecase "Vložení doporučeného průchodu\ndo vlastního plánu" as UC_015
+    usecase "Zobrazení předmětů doporučených\nke státnicím" as UC_016
+    usecase "Zobrazení mapy rekvizit" as UC_017
+    usecase "Hodnocení a komentování plánu" as UC_018
+    usecase "Zobrazení zvoleného plánu" as UC_019
+}
+
+AC_NS -l-|> AC_S
+AC_RS -r-|> AC_S
+
+AC_S -r-> UC_001
+AC_S --> UC_002
+AC_S --> UC_003
+AC_S --> UC_004
+
+AC_NS --> UC_009
+AC_NS --> UC_010
+AC_NS -u-> UC_011
+
+AC_RS --> UC_019
+
+UC_005 .u.> UC_002 : <<extends>>
+UC_005 .u.> UC_003 : <<extends>>
+UC_005 .u.> UC_004 : <<extends>>
+UC_005 .u.> UC_011 : <<extends>>
+
+UC_005 .d.> UC_006 : <<includes>>
+UC_005 .d.> UC_007 : <<includes>>
+UC_005 .d.> UC_008 : <<includes>>
+UC_005 .d.> UC_013 : <<includes>>
+UC_005 .d.> UC_016 : <<includes>>
+UC_005 .d.> UC_017 : <<includes>>
+
+UC_012 .l.> UC_005 : <<extends>>
+UC_014 .r.> UC_005 : <<extends>>
+
+UC_015 .l.> UC_019 : <<extends>>
+UC_018 .r.> UC_019 : <<extends>>
+UC_019 ..> UC_005 : <<includes>>
+
+@enduml
