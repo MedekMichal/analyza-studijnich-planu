@@ -1,0 +1,108 @@
+@startuml class-diagram
+
+class "Student" as S {
+    ukčo : Int
+    rok zápisu : Int[0..1]
+}
+
+S "0..*" --> "0..*" SP : komentuje
+(S, SP) .. K
+
+S "0..*" --> "0..*" SP : hodnotí
+(S, SP) .. H
+
+S "1" --> "1" BP : plánuje
+
+S "0..*" --> "0..1" SP : zvolil
+
+class "Komentář" as K {
+    text : String
+}
+
+class "Hodnocení" as H {
+    počet hvězdiček : Int
+}
+
+class "Blueprint" as BP {
+    
+}
+
+BP "1" --> "1..*" BPS : sestává z
+
+class "Skupina blueprintu" as BPS {
+    pořadí : Int
+}
+
+BPS "1" *-- "0..*" PBPS : obsahuje
+
+class "Předmět ve skupině blueprintu" as PBPS {
+    pořadí : Int
+}
+
+PBPS "0..*" --> "1" P : detail předmětu
+
+class "Studijní plán" as SP {
+    kód : String
+    název : String
+    druh studia : {bakalářský, navazující magisterský}
+    platnost od : Int
+    platnost do : Int
+    minimální počet kreditů : Int
+}
+
+SP "1" --> "0..*" STAT : má statistiku
+
+SP "0..*" --> "0..*" P : doporučený ke státnicím
+
+SP "1" *-- "1..*" G : sestává z
+
+class "Skupina" as G {
+    název : String
+    typ : {povinna, povinne volitelna, volitelna}
+    limit kreditů : Int
+}
+
+G "1" *-- "1..*" PVS : obsahuje
+
+class "Předmět ve skupině" as PVS {
+    pořadí : Int
+    doporučený ročník min : Int[0..1]
+    doporučený ročník max : Int[0..1]
+}
+
+PVS "0..*" --> "1" P : detail předmětu
+
+class "Předmět" as P {
+    kód : String
+    název : String
+    semestr : {zimní, letní, oba}
+    počet kreditů : Int
+    garant: String[0..3]
+    stav výuky : {vyučován, nevyučován, zrušen}
+}
+
+P "1..*" --> "0..*" R : má jednoduchou rekvizitu
+
+P "1..*" --> "0..1" SR : má složitou rekvizitu
+
+class "Složitá rekvizita" as SR {
+    typ : {AND, OR}
+}
+
+SR "0..*" --> "0..*" SR : má podrekvizitu
+
+SR "0..*" --> "0..*" R : jednoduchá rekvizita
+
+class "Rekvizita" as R {
+    druh : {prerekvizita, korekvizita, neslučitelnost}
+}
+
+R "0..*" --> "1" P : odkaz na předmět
+
+class "Statistika" as STAT {
+    akademický rok : Int
+    počet zapsaných studentů : Int
+    počet absolventů : Int
+} 
+
+@enduml
