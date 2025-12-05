@@ -1037,3 +1037,62 @@ Nové moduly nesmí měnit chování současných funkcí:
 
 ### 7. Časové omezení
 Návrh i implementace musí být realizovány v rámci diplomové práce a běžné evoluce RecSIS; nelze připravovat dlouhodobě neudržitelné nebo extrémně náročné změny architektury.
+
+# Doménový model
+
+![Domaine Model](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/class-diagram.svg)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/171c07f35b2f21fdff9303fdbc2981637265c367/documentation/class-diagram.plantuml))_
+
+## Třídy
+
+### Student
+
+Člověk, který studuje Informatiku na MFF UK v češtině.
+
+### Studijní plán
+
+Třída, která reprezentuje studijní plán na MFF UK.
+
+### Komentář
+
+Třída, která reprezentuje komentář uživatele k danému studijnímu plánu.
+
+### Hodnocení
+
+Třída, která reprezentuje hodnocení uživatele k danému studijnímu plánu.
+
+### Statistika
+
+Třída, která reprezentuje informace o počtu studentů a absolventů daného studijního plánu.
+
+### Skupina
+
+Třída, která reprezentuje základní stavební kámen studijního plánu, specifikující povinné a povinně volitelné předměty.
+
+### Předmět ve skupině
+
+Třída, která reprezentuje základní stavební kámen skupiny, specifikující pozici předmětu a jeho doporučený ročník.
+
+### Předmět
+
+Třída, která reprezentuje předmět vyučovaný na MFF UK.
+
+### Blueprint
+
+Třída, která reprezentuje vlastní studijní plán uživatele, který si může upravovat a kde plánuje své studium.
+
+### Skupina blueprintu
+
+Třída, která reprezentuje základní stavební kámen blueprintu, specifikující vlastnosti skupiny v uživatelském plánu.
+
+### Předmět ve skupině blueprintu
+
+Třída, která reprezentuje základní stavební kámen skupiny blueprintu, specifikující pozici předmětu.
+
+### Složitá rekvizita
+
+Třída, která reprezentuje složité (rekurzivní) vztahy mezi předměty, založené na logických výrazech AND a OR a postavené nad jednoduchými rekvizitami.
+
+### Jednoduchá rekvizita
+
+Třída, která reprezentuje jednoduché vztahy mezi předměty - přímé prerekvizity, korekvizity a neslučitelnosti.
