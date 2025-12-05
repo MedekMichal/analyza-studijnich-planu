@@ -9,12 +9,6 @@ Nerozhodnutý student
 Rozhodnutý student
 = student, který si vybral specializaci/má daný studijní obor a plánuje si studium
 
-# Definice
-
-Student
-
-Studijní plán
-
 # Problémy
 
 Plánování celého studia najednou (RecSIS)  
@@ -173,6 +167,15 @@ Na.1. [uveďte alternativní tok jako lineární sekvenci kroků]
 
 Student
 
+## Související user stories
+
+#1
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_001)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L10))_
+
 ## Předpoklady
 
 - Student je přihlášen do systému RecSIS.
@@ -203,6 +206,15 @@ Student
 ## Aktéři
 
 Student
+
+## Související user stories
+
+#2
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_002)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L11))_
 
 ## Předpoklady
 
@@ -241,6 +253,15 @@ Student
 
 Student
 
+## Související user stories
+
+#3
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_003)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L12))_
+
 ## Předpoklady
 
 - Student je přihlášen do systému RecSIS.
@@ -278,6 +299,15 @@ Student
 
 Student
 
+## Související user stories
+
+#4
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_004)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L13))_
+
 ## Předpoklady
 
 - Student je přihlášen do systému RecSIS.
@@ -308,6 +338,15 @@ Student
 ## Aktéři
 
 Student
+
+## Související user stories
+
+#5
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_005)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L14))_
 
 ## Předpoklady
 
@@ -340,6 +379,15 @@ Student
 
 Student
 
+## Související user stories
+
+#6
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_006)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L15))_
+
 ## Předpoklady
 
 - Student je přihlášen do systému RecSIS.
@@ -364,6 +412,15 @@ N/A
 ## Aktéři
 
 Student
+
+## Související user stories
+
+#7
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_007)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L16))_
     
 ## Předpoklady
 
@@ -394,6 +451,15 @@ Student
 ## Aktéři
 
 Student
+
+## Související user stories
+
+#8
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_008)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L17))_
     
 ## Předpoklady
 
@@ -421,6 +487,15 @@ Student
 ## Aktéři
 
 Nerozhodnutý student
+
+## Související user stories
+
+#9
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_009)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L18))_
 
 ## Předpoklady
 
@@ -471,6 +546,15 @@ Nerozhodnutý student
 
 Nerozhodnutý student
 
+## Související user stories
+
+#10
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_010)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L19))_
+
 ## Předpoklady
 
 - Nerozhodnutý student je přihlášen do systému RecSIS.
@@ -520,6 +604,15 @@ Nerozhodnutý student
 
 Nerozhodnutý student
 
+## Související user stories
+
+#11
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_011)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L20))_
+
 ## Předpoklady
 
 - Nerozhodnutý student je přihlášen do systému RecSIS.
@@ -552,6 +645,15 @@ Nerozhodnutý student
 
 Nerozhodnutý student
 
+## Související user stories
+
+#12
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_012)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L21))_
+
 ## Předpoklady
 
 - Nerozhodnutý student je přihlášen do systému RecSIS.
@@ -580,6 +682,15 @@ Nerozhodnutý student
 ## Aktéři
 
 Nerozhodnutý student
+
+## Související user stories
+
+#13
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_013)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L22))_
 
 ## Předpoklady
 
@@ -611,6 +722,15 @@ Nerozhodnutý student
 
 Nerozhodnutý student
 
+## Související user stories
+
+#14
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_014)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L23))_
+
 ## Předpoklady
 
 - Nerozhodnutý student je přihlášen do systému RecSIS.
@@ -640,6 +760,15 @@ Nerozhodnutý student
 ## Aktéři
 
 Rozhodnutý student
+
+## Související user stories
+
+#15
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_015)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L24))_
 
 ## Předpoklady
 
@@ -676,6 +805,15 @@ Rozhodnutý student
 
 Rozhodnutý student
 
+## Související user stories
+
+#16
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_016)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L25))_
+
 ## Předpoklady
 
 - Rozhodnutý student je přihlášen do systému RecSIS.
@@ -703,6 +841,15 @@ Rozhodnutý student
 ## Aktéři
 
 Rozhodnutý student
+
+## Související user stories
+
+#17
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_017)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L26))_
 
 ## Předpoklady
 
@@ -735,6 +882,15 @@ Rozhodnutý student
 ## Aktéři
 
 Rozhodnutý student
+
+## Související user stories
+
+#18
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_018)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L27))_
 
 ## Předpoklady
 
@@ -783,6 +939,15 @@ Rozhodnutý student
 
 Rozhodnutý student
 
+## Související user stories
+
+#19
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_019)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L28))_
+
 ## Předpoklady
 
 - Rozhodnutý student je přihlášen do systému RecSIS.
@@ -804,24 +969,71 @@ N/A
 
 # Kvalitativní požadavky
 
-**TODO**:
-- něco o pěkné vizualizaci
-- verze pro mobilní zařízení (alespoň základní featury)
-- něco o málo proklikávání
-- musí to být strojově zpracovatelné aby to bylo použitelné do budoucnosti
-- vysvetlivky u zkratek
-- vysvetleni ze tucne je povinne, kurziva volitelne, ...
-- aktuální data ze SIS databáze
+Rozšíření musí být navrženo tak, aby nový student zvládl zobrazit studijní plán a základní porovnání bez nutnosti číst dokumentaci.
+Metrika: 90 % testovaných uživatelů musí být schopno zobrazit svůj plán do 60 sekund.
 
-# Omezení (constraints)
+Uživatel musí být schopen dostat se k hlavním funkcím (zobrazení plánu, porovnání, úprava blueprintu) nejvýše přes 2–3 kroky.
 
-Řešení musí být implementováno jako rozšíření stávajícího systému RecSIS, aby bylo možné využít jeho existující infrastrukturu a data.
+Rozšíření musí mít:
+- vysvětlivky ke zkratkám (hover nebo info ikonka),
+- konzistentní vizuální styl pro předměty, kredity a upozornění,
+- jasné vysvětlení významu formátování (např. tučné = povinné, kurzíva = volitelné).
 
-## Vlastnosti rozšiřovaného systému (RecSIS)
+Základní funkce – vyhledávání a zobrazení plánu s jeho detaily a základními funkcionalitami musí být dostupné na mobilu v responzivním layoutu. Nemusí být dostupné porovnávání.
 
-RecSIS nabízí plánování studia po semestrech, kam si student může přidávat předměty dle svého uvážení (blueprint). Systém také umožňuje vyhledávání a filtrování předmětů a zobrazení detailů předmětů.
+CRUD operace nad blueprintem musí být atomické, aby nemohlo dojít k částečně uloženému nebo nevalidnímu stavu.
 
-Systém RecSIS používá PostgreSQL databázi, backend je napsaný v Go a frontend je šablonován pomocí Go Templ.
+Uživatel musí být přihlášen přes CAS UK.
 
-**TODO**:
-- data jsou ze SIS databáze, ne všechno tam prostě je
+Blueprint studijního plánu je přístupný pouze jeho autorovi; totéž platí pro data o jeho studiu (nikdo jiný je nesmí číst).
+
+Systém umožňuje logovat základní operace (zobrazení plánu, porovnání plánů, ...).
+
+Logy nesmí obsahovat žádné osobní ani citlivé údaje.
+
+# Omezení (Constraints)
+
+## Technické a architektonické omezení
+
+### 1. Rozšíření existujícího systému RecSIS
+Nově navrhované řešení musí být implementováno jako rozšíření stávající aplikace RecSIS.  
+Z toho vyplývá nutnost:
+- využívat existující datové modely a infrastrukturu,
+- respektovat současnou architekturu backendu a frontendu,
+- integrovat se do již existujícího způsobu autentizace a práce s uživatelskými účty,
+- nepřepisovat nesouvisející funkce RecSIS.
+
+### 2. Technologický stack RecSIS
+Rozšíření musí používat stejné technologie jako hlavní systém:
+- **backend:** Go  
+- **databáze:** PostgreSQL  
+- **frontend:** Go Templ (server-side), doplněné pouze o nezbytné minimum JavaScriptu (např. pro vizualizace) primárně pomocí Alpine.js.
+
+Je zakázáno zavádět nový framework či technologii, pokud by nešla integrovat se stávající architekturou.
+
+### 3. Dostupnost a kvalita dat ze SIS
+RecSIS využívá data synchronizovaná z databáze SIS, nicméně:
+- **ne všechna relevantní data jsou v SIS dostupná**,  
+- některé informace mohou být neúplné, neaktuální nebo závislé na interpretaci.
+
+Nové řešení s tím musí počítat a nesmí předpokládat úplnost nebo plnou konzistenci dat.
+
+## Provozní omezení
+
+### 4. Bezpečnostní a přístupová pravidla UK
+Systém musí respektovat pravidla univerzitních služeb, zejména:
+- autentizaci přes CAS UK,
+- správu uživatelských dat v souladu s interními směrnicemi,
+- přístup pouze k datům, která jsou univerzitou zpřístupněna.
+
+## Organizační omezení
+
+### 6. Rozšíření nesmí negativně ovlivnit stávající funkce RecSIS
+Nové moduly nesmí měnit chování současných funkcí:
+- plánování po semestrech,
+- vyhledávání a filtrování předmětů,
+- práce s blueprintem,
+- zobrazování detailů předmětů.
+
+### 7. Časové omezení
+Návrh i implementace musí být realizovány v rámci diplomové práce a běžné evoluce RecSIS; nelze připravovat dlouhodobě neudržitelné nebo extrémně náročné změny architektury.
