@@ -26,6 +26,7 @@ rectangle "RecSIS - Studijní plány" {
     usecase "Zobrazení mapy rekvizit" as UC_017
     usecase "Hodnocení a komentování plánu" as UC_018
     usecase "Zobrazení zvoleného plánu" as UC_019
+    usecase "Historie zobrazených\nplánů" as UC_020
 }
 
 AC_NS -l-|> AC_S
@@ -38,7 +39,8 @@ AC_S --> UC_004
 
 AC_NS --> UC_009
 AC_NS --> UC_010
-AC_NS -u-> UC_011
+AC_NS --> UC_011
+AC_NS --> UC_020
 
 AC_RS --> UC_019
 
