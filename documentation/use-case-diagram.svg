@@ -57,27 +57,27 @@
                 textLength="101" x="674.3525" y="536.3871">Zobrazen&#237; pl&#225;nu</text>
         </g>
         <g id="elem_UC_006">
-            <ellipse cx="1111.3351" cy="752.867" fill="#F1F1F1" rx="82.3351" ry="18.867"
+            <ellipse cx="1111.3351" cy="799.867" fill="#F1F1F1" rx="82.3351" ry="18.867"
                 style="stroke:#181818;stroke-width:0.5;" />
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="120" x="1051.3351" y="756.5955">&#218;vodn&#237; text u pl&#225;nu</text>
+                textLength="120" x="1051.3351" y="803.5955">&#218;vodn&#237; text u pl&#225;nu</text>
         </g>
         <g id="elem_UC_007">
-            <ellipse cx="1111.4654" cy="670.9147" fill="#F1F1F1" rx="94.9654" ry="27.9147"
+            <ellipse cx="1111.4654" cy="717.9147" fill="#F1F1F1" rx="94.9654" ry="27.9147"
                 style="stroke:#181818;stroke-width:0.5;" />
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="118" x="1050.5113" y="666.3679">Kreditov&#233; statistiky</text>
+                textLength="118" x="1050.5113" y="713.3679">Kreditov&#233; statistiky</text>
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="93" x="1063.0113" y="683.9773">u detailu pl&#225;nu</text>
+                textLength="93" x="1063.0113" y="730.9773">u detailu pl&#225;nu</text>
         </g>
         <g id="elem_UC_008">
-            <ellipse cx="1111.2736" cy="577.9547" fill="#F1F1F1" rx="137.7736" ry="29.9547"
+            <ellipse cx="1111.2736" cy="624.9547" fill="#F1F1F1" rx="137.7736" ry="29.9547"
                 style="stroke:#181818;stroke-width:0.5;" />
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="191" x="1012.7736" y="573.6666">Detail p&#345;edm&#283;tu v
+                textLength="191" x="1012.7736" y="620.6666">Detail p&#345;edm&#283;tu v
                 zobrazen&#233;m</text>
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="94" x="1061.2736" y="591.276">studijn&#237;m pl&#225;nu</text>
+                textLength="94" x="1061.2736" y="638.276">studijn&#237;m pl&#225;nu</text>
         </g>
         <g id="elem_UC_009">
             <ellipse cx="350.136" cy="804.9881" fill="#F1F1F1" rx="110.136" ry="27.9881"
@@ -112,12 +112,12 @@
                 zvolen&#253;</text>
         </g>
         <g id="elem_UC_013">
-            <ellipse cx="1111.5452" cy="484.9034" fill="#F1F1F1" rx="97.0452" ry="27.9034"
+            <ellipse cx="1111.5452" cy="531.9034" fill="#F1F1F1" rx="97.0452" ry="27.9034"
                 style="stroke:#181818;stroke-width:0.5;" />
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="113" x="1055.0452" y="479.8272">Zobrazen&#237; statistik</text>
+                textLength="113" x="1055.0452" y="526.8272">Zobrazen&#237; statistik</text>
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="121" x="1051.0452" y="497.4366">o studentech pl&#225;nu</text>
+                textLength="121" x="1051.0452" y="544.4366">o studentech pl&#225;nu</text>
         </g>
         <g id="elem_UC_014">
             <ellipse cx="727.859" cy="629.9912" fill="#F1F1F1" rx="110.859" ry="27.9912"
@@ -137,19 +137,19 @@
                 textLength="115" x="289.4711" y="87.3155">do vlastn&#237;ho pl&#225;nu</text>
         </g>
         <g id="elem_UC_016">
-            <ellipse cx="1111.7076" cy="390.1415" fill="#F1F1F1" rx="148.7076" ry="32.1415"
+            <ellipse cx="1111.7076" cy="437.1415" fill="#F1F1F1" rx="148.7076" ry="32.1415"
                 style="stroke:#181818;stroke-width:0.5;" />
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="220" x="998.8425" y="385.8203">Zobrazen&#237; p&#345;edm&#283;t&#367;
+                textLength="220" x="998.8425" y="432.8203">Zobrazen&#237; p&#345;edm&#283;t&#367;
                 doporu&#269;en&#253;ch</text>
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="74" x="1071.8425" y="403.4297">ke st&#225;tnic&#237;m</text>
+                textLength="74" x="1071.8425" y="450.4297">ke st&#225;tnic&#237;m</text>
         </g>
         <g id="elem_UC_017">
-            <ellipse cx="1111.3753" cy="302.1751" fill="#F1F1F1" rx="93.8753" ry="21.1751"
+            <ellipse cx="1111.3753" cy="349.1751" fill="#F1F1F1" rx="93.8753" ry="21.1751"
                 style="stroke:#181818;stroke-width:0.5;" />
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
-                textLength="147" x="1037.8753" y="305.9036">Zobrazen&#237; mapy rekvizit</text>
+                textLength="147" x="1037.8753" y="352.9036">Zobrazen&#237; mapy rekvizit</text>
         </g>
         <g id="elem_UC_018">
             <ellipse cx="350.2025" cy="283.1405" fill="#F1F1F1" rx="118.7025" ry="26.1405"
@@ -171,6 +171,14 @@
                 textLength="130" x="282.1295" y="982.67">Historie zobrazen&#253;ch</text>
             <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
                 textLength="35" x="329.6295" y="1000.2794">pl&#225;n&#367;</text>
+        </g>
+        <g id="elem_UC_021">
+            <ellipse cx="1111.3725" cy="265.0411" fill="#F1F1F1" rx="123.8725" ry="28.0411"
+                style="stroke:#181818;stroke-width:0.5;" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="158" x="1029.3725" y="260.753">Zobrazen&#237; doporu&#269;en&#233;ho</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="99" x="1058.8725" y="278.3623">pr&#367;chodu pl&#225;nu</text>
         </g><!--entity
         AC_S-->
         <g id="elem_AC_S">
@@ -340,73 +348,83 @@
         UC_005 to UC_006-->
         <g id="link_UC_005_UC_006">
             <path
-                d="M774.14,545.85 C795.74,554.22 820.78,566.68 839,584 C859.46,603.46 851,618.25 869,640 C903.25,681.39 914.93,692.01 963,716 C987.69,728.32 1010.9393,735.4648 1036.7493,741.1248 "
+                d="M777.89,545.23 C799.3,553.27 823.11,565.63 839,584 C868.8,618.45 844.22,643.78 869,682 C899.16,728.52 913.78,738.48 963,764 C986.99,776.44 1009.5415,783.4407 1035.0015,788.8607 "
                 fill="none" id="UC_005-to-UC_006"
                 style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
             <polygon fill="#181818"
-                points="1042.61,742.41,1034.6757,736.575,1037.7261,741.339,1032.9621,744.3893,1042.61,742.41"
+                points="1040.87,790.11,1032.9001,784.3237,1035.9796,789.0689,1031.2344,792.1484,1040.87,790.11"
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
-                textLength="62" x="870" y="636.4951">&#171;includes&#187;</text>
+                textLength="62" x="870" y="678.4951">&#171;includes&#187;</text>
         </g><!--link
         UC_005 to UC_007-->
         <g id="link_UC_005_UC_007">
             <path
-                d="M766.71,547.15 C794.88,558.45 834.33,574.24 869,588 C910.73,604.56 920.65,610.08 963,625 C989.19,634.22 1012.5737,641.7507 1037.9737,649.5407 "
+                d="M766.54,547.15 C788.35,556.58 815.98,569.62 839,584 C853.48,593.04 855.27,597.85 869,608 C909.65,638.03 917.49,650.01 963,672 C986.67,683.43 1008.0775,691.1544 1032.5975,698.4244 "
                 fill="none" id="UC_005-to-UC_007"
                 style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
             <polygon fill="#181818"
-                points="1043.71,651.3,1036.2784,644.8369,1038.9298,649.8339,1033.9327,652.4853,1043.71,651.3"
+                points="1038.35,700.13,1030.8583,693.7367,1033.5563,698.7087,1028.5842,701.4066,1038.35,700.13"
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
-                textLength="62" x="870" y="584.4951">&#171;includes&#187;</text>
+                textLength="62" x="870" y="604.4951">&#171;includes&#187;</text>
         </g><!--link
         UC_005 to UC_008-->
         <g id="link_UC_005_UC_008">
-            <path
-                d="M787.79,542.57 C812.77,546.82 842.25,551.53 869,555 C905.65,559.75 939.5766,563.3856 976.1966,566.8456 "
+            <path d="M780.45,544.54 C841.47,559.42 938.4608,583.0588 1013.1508,601.2688 "
                 fill="none" id="UC_005-to-UC_008"
                 style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
             <polygon fill="#181818"
-                points="982.17,567.41,973.5862,562.5812,977.1922,566.9397,972.8336,570.5457,982.17,567.41"
+                points="1018.98,602.69,1011.1836,596.672,1014.1223,601.5057,1009.2886,604.4443,1018.98,602.69"
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
-                textLength="62" x="870" y="551.4951">&#171;includes&#187;</text>
+                textLength="62" x="870" y="564.4951">&#171;includes&#187;</text>
         </g><!--link
         UC_005 to UC_013-->
         <g id="link_UC_005_UC_013">
-            <path d="M794.58,523.92 C857.32,516.19 946.455,505.2139 1015.915,496.6539 " fill="none"
+            <path d="M803.01,532 C863.25,532 942.72,532 1008.27,532 " fill="none"
                 id="UC_005-to-UC_013"
                 style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
             <polygon fill="#181818"
-                points="1021.87,495.92,1012.4483,493.0508,1016.9075,496.5316,1013.4268,500.9908,1021.87,495.92"
+                points="1014.27,532,1005.27,528,1009.27,532,1005.27,536,1014.27,532"
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
-                textLength="62" x="870" y="504.4951">&#171;includes&#187;</text>
+                textLength="62" x="870" y="528.4951">&#171;includes&#187;</text>
         </g><!--link
         UC_005 to UC_016-->
         <g id="link_UC_005_UC_016">
-            <path
-                d="M765.63,516.68 C811.48,497.69 892.56,464.67 963,439 C983.92,431.38 1000.9774,425.4758 1022.2074,418.4058 "
+            <path d="M780.05,519.29 C839.54,504.47 933.3379,481.1204 1007.6779,462.6004 "
                 fill="none" id="UC_005-to-UC_016"
                 style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
             <polygon fill="#181818"
-                points="1027.9,416.51,1018.0972,415.5585,1023.1561,418.0898,1020.6249,423.1487,1027.9,416.51"
+                points="1013.5,461.15,1003.8,459.4443,1008.6483,462.3587,1005.7339,467.207,1013.5,461.15"
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
-                textLength="62" x="870" y="447.4951">&#171;includes&#187;</text>
+                textLength="62" x="870" y="478.4951">&#171;includes&#187;</text>
         </g><!--link
         UC_005 to UC_017-->
         <g id="link_UC_005_UC_017">
             <path
-                d="M773.21,517.91 C794.96,509.3 820.42,496.53 839,479 C858.97,460.16 851.92,446.5 869,425 C904.04,380.9 913.4,366.69 963,340 C985.01,328.16 1005.0257,321.2805 1028.8957,315.5505 "
+                d="M765.4,516.73 C787.31,506.99 815.44,493.5 839,479 C853.31,470.2 855.56,466.08 869,456 C910.46,424.9 916.17,409.2 963,387 C986.18,376.01 1007.1361,369.3021 1031.4761,363.4521 "
                 fill="none" id="UC_005-to-UC_017"
                 style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
             <polygon fill="#181818"
-                points="1034.73,314.15,1025.0449,312.3613,1029.8681,315.3171,1026.9123,320.1403,1034.73,314.15"
+                points="1037.31,362.05,1027.6244,360.264,1032.4484,363.2185,1029.494,368.0425,1037.31,362.05"
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
-                textLength="62" x="870" y="356.4951">&#171;includes&#187;</text>
+                textLength="62" x="870" y="401.4951">&#171;includes&#187;</text>
+        </g><!--link
+        UC_005 to UC_021-->
+        <g id="link_UC_005_UC_021">
+            <path
+                d="M777.11,518.67 C798.74,510.45 822.97,497.78 839,479 C869.13,443.71 842.25,416.91 869,379 C898.88,336.66 916.67,333.22 963,310 C982.75,300.1 999.3479,293.6829 1020.5579,287.1229 "
+                fill="none" id="UC_005-to-UC_021"
+                style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+            <polygon fill="#181818"
+                points="1026.29,285.35,1016.5099,284.1879,1021.5133,286.8274,1018.8738,291.8307,1026.29,285.35"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="62" x="870" y="322.4951">&#171;includes&#187;</text>
         </g><!--reverse
         link UC_005 to UC_012-->
         <g id="link_UC_005_UC_012">
@@ -458,6 +476,6 @@
                 style="stroke:#181818;stroke-width:1.0;" />
             <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
                 textLength="62" x="524" y="274.4951">&#171;includes&#187;</text>
-        </g><!--SRC=[bPIzRjim4CTtFSKXkmtB7qbS10QA54MA0caH8naA0m4hiX5hYHGeIgZLzX7o0AadZnw239tJHVPxbP92VT0Mt7eoJx_xyq_U7JtoHOBa8EYTAm5JGHn9ERCiv4Wku6Wg8qoOF08KmklpswcENnB14vTZ5idq6S8cTLbYL-tGrTIoijqGk_E88eapVJU53cGxqgyiVOJ0IrTiSGJVBL2_A2GE2XLv7V242xPPPWn38CWyfWcLYncB2SGU2gNwuXVfKRxTzVbjhsStPMuMhaTmkeeLfJVRFirOmB7omz9L4jUI-_-JF4z_urhke9dxbdfIy6Pc1G-Ry2V-MQ24b6XDTjGaqr-nkcd5IV9DGhI37pVnzu9WAfMDjIeCaZIKTAvkC09C9ABURlv9C_zDZa6mVI3Otonb134askpQdx5Grt6t4gUjPrHDXTD7R_i4FadeZE5ui_HHsGbQODmg40RS8vjxbZuxhYg7TlSYQ0hPlNyfA-HLRQXL2aPNVKWOsjpNwWK9WYHMffIbAglVVW1TZ1dZUcI8uvftQ1jDzL5mnrKzcsja8yUTxEzCpSUS-qeZNMqVigCO_MOR_NRZyUsVN0JpW8ieFylQvH28xPEZX2DL55vEMVR1C3PgR-1QDMhgUQNcH1qsNKb67TKnbTfngvgFWaKv-rM2qQONvLM0led6wDMCjtVbI_tMUqvhTEA5AXqNb5IZKFIXSUlzdlNJilAN4ZfUvyUaU5lpLn4weWnaaJmmqKzO4T3hlh4U6EjXkOcEZ8s0cW0ZO1i1vLKRqyZOieeN2BfHLrk1Lt1sffuUmd0ucUm2WqF0y01WsmPG4bXB7ES4POwdvgQkKH8d1udJGuGzE4WSz67l-B2ATm6wdZOosdCVzX2weWqeY54bOO_tIPnM4lk1CNIRMzHi_WK0]-->
+        </g><!--SRC=[bPJDQjj04CVlUeeXTnlB7qbSWg6ab9H2McAIGp44LTf6MqkxOhKIjTe-GXuWzSb77q8EFQSNsU_LaPJLnzh2hK_UqM_-CpiVwv4l4YG7GUzS2GuLn9QKCyEmRCa574rbv10cZy0AuVNvxLJPBudWYSiT5idq6S8cTLbYL-tGrTGmicWMk_C8aiIUlfj21xA8z2jB7o7mqXLR7C5t0_0NXSIsGYIl0vvmmJRBZ64M23AFQKBbOiPY0h5dXHA_-8Lxb8UxFh_jzSocpCt2zOYJhcAaLB3jqum5tC5yMBfAuffp_t-Sv-blf-OxQFg-fPuKlEbPmSCc_8b_5bP2IhGcEsgIwQyOAusS9DyaH3luSHD_BuX39QQnniPOaeQIph624JX4MjJRzJzf-h_9CGYs3yJnDqiPGGo9IdRjprYe-hZRYTFME-9GEUcZjtq2doHqnfnui_IjSXAKmBXL80ouHpRtB7ssNMo7okv5K1SoU__ILiYxsb2h5BIf-f0mQtDVwnSa5YGn9eKfLLxzzWkePimOLoj3R5UleQaDrKV1RHTdDjV8LexRsTyPxiUS-wYHhhOFsLMqUJErURln-FPFBkBmW8ielylQvH28xPEDmX4sXPTRbdtG4Xkr3t2j6pNrl5DpWfTDLv9H6oUcKZjkLVEjO57kVkMWZUb5MGfGbMYiNYtnzgbywTzwpssrIRp0rd51IRKAnHngLU_tMcCrouwkgkvwwBvf_3IC_BM5ZjVvCIdUv_nbXOue3PabDqpKCrWOrBcldGVQULW6KPQnPi0jqWocPi3xgiGKCZQCuXM3RjHLgS0hE3l3vuim9vnCTe718M1u031D3IW9HqaSvmHbjeUxLzSeYPE3nEaXmXmS90xcOHxCes_gX56yFj3rLAgZFHKpXz0LRK11Z2e9SxnFuhIIs0-CeTiCKKlpBm00]-->
     </g>
 </svg>

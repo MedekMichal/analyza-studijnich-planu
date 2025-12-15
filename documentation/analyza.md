@@ -122,6 +122,8 @@ Jako [KDO] chci [CO] abych [PROČ].
 
 14. Jako nerozhodnutý student chci procházet komentáře a hodnocení studijních plánů od ostatních studentů abych získal další pohledy a zkušenosti, které mi pomohou při výběru specializace.
 
+20. Jako nerozhodnutý student chci vidět historii zobrazených studijních plánů, abych je nemusel pokaždé vyhledávat a měl k nim tak rychlý přístup.
+
 ### Požadavky pro rozhodnuté studenty
 
 15. Jako rozhodnutý student chci vložit doporučený průchod studijním plánem do svého vlastního plánu abych mohl snadno plánovat své studium podle doporučeného průchodu.
@@ -133,6 +135,10 @@ Jako [KDO] chci [CO] abych [PROČ].
 18. Jako rozhodnutý student chci mít možnost komentovat a hodnotit studijní plány abych mohl sdílet své zkušenosti s ostatními studenty a pomoci jim při výběru studijního plánu.
 
 19. Jako rozhodnutý student chci mít přímý přístup ke svému zvolenému studijnímu plánu abych mohl rychle a efektivně plánovat své studium bez nutnosti vyhledávání a proklikávání.
+
+20. Jako nerozhodnutý student chci vidět historii zobrazených studijních plánů, abych je nemusel pokaždé vyhledávat a měl k nim tak rychlý přístup.
+
+21. Jako student chci u zobrazeného studijního plánu vidět doporučený průchod studiem abych věděl, jaké předměty bych měl absolvovat v jednotlivých semestrech, abych předešel komplikacím při plnění prerekvizit a mohl efektivněji plánovat své studium.
 
 ## Případy užití (use-cases)
 
@@ -186,7 +192,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/23298
 1. Student otevře svůj vlastní plán (blueprint) v systému RecSIS.
 2. Systém analyzuje naplánované předměty a jejich prerekvizity, korekvizity a neslučitelnosti.
 3. U předmětů, jejichž prerekvizity, korekvizity nebo neslučitelnosti nejsou splněny, systém zobrazí upozornění ve formě ikony u řádku předmětu.
-4. Při najetí myší na ikonu se zobrazí detailní informace o nesplněných prerekvizitách, kolektivitách nebo neslučitelnostech pro daný předmět.
+4. Při najetí myší na ikonu se zobrazí detailní informace o nesplněných prerekvizitách, korekvizitách nebo neslučitelnostech pro daný předmět.
 
 ## Alternativní toky (Alternative Flows)
 
@@ -966,6 +972,80 @@ N/A
 ## Výsledný stav (Postconditions)
 
 - Rozhodnutý student vidí svůj zvolený studijní plán spolu s možnostmi pro jeho správu.
+
+### UC-020: Historie zobrazených plánů
+
+## Aktéři
+
+Nerozhodnutý student
+
+## Související user stories
+
+#39 
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_020)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L29))_
+
+## Předpoklady
+
+- Nerozhodnutý student je přihlášen do systému RecSIS.
+- Nerozhodnutý student je na stránce pro správu studijních plánů.
+- Nerozhodnutý student si v minulosti zobrazil nějaké studijní plány.
+
+## Základní tok (Basic Flow)
+
+1. Nerozhodnutý student klikne na možnost zobrazení historie zobrazených plánů.
+2. Systém načte a zobrazí seznam pěti naposledy zobrazených studijních plánů nerozhodnutého studenta.
+
+## Alternativní toky (Alternative Flows)
+
+N/A
+
+## Výsledný stav (Postconditions)
+
+- Systém zobrazil historii zobrazených plánů.
+- Nerozhodnutý student má přehled o svých nedávno zobrazených studijních plánech pro snadný přístup.
+
+### UC-021: Zobrazení doporučeného průchodu plánu
+
+## Aktéři
+
+Student
+
+## Související user stories
+
+#41
+
+## Související diagramy
+
+![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_021)  
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L30))_
+
+## Předpoklady
+
+- Student je přihlášen do systému RecSIS.
+- Student je na stránce pro správu studijních plánů.
+- Student má zobrazený studijní plán, jehož doporučený průchod chce zobrazit.
+
+## Základní tok (Basic Flow)
+
+1. Student klikne na možnost zobrazení doporučeného průchodu plánu.
+2. Systém načte a zobrazí doporučený průchod studijním plánem, včetně pořadí a rozložení předmětů v jednotlivých semestrech.
+
+## Alternativní toky (Alternative Flows)
+
+2a. Studijní plán neobsahuje žádný doporučený průchod.  
+2a.1. Systém zobrazí zprávu informující studenta, že doporučený průchod není dostupný.
+
+2b. Systém nemůže načíst doporučený průchod (např. kvůli technické chybě).  
+2b.1. Systém zobrazí chybovou zprávu informující studenta o problému.
+
+## Výsledný stav (Postconditions)
+
+- Systém zobrazil doporučený průchod studijním plánem.
+- Student má přehled o doporučeném průchodu a může si podle něj naplánovat své studium.
 
 # Kvalitativní požadavky
 

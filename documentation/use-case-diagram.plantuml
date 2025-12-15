@@ -27,6 +27,7 @@ rectangle "RecSIS - Studijní plány" {
     usecase "Hodnocení a komentování plánu" as UC_018
     usecase "Zobrazení zvoleného plánu" as UC_019
     usecase "Historie zobrazených\nplánů" as UC_020
+    usecase "Zobrazení doporučeného\nprůchodu plánu" as UC_021
 }
 
 AC_NS -l-|> AC_S
@@ -55,6 +56,7 @@ UC_005 .d.> UC_008 : <<includes>>
 UC_005 .d.> UC_013 : <<includes>>
 UC_005 .d.> UC_016 : <<includes>>
 UC_005 .d.> UC_017 : <<includes>>
+UC_005 .d.> UC_021 : <<includes>>
 
 UC_012 .l.> UC_005 : <<extends>>
 UC_014 .r.> UC_005 : <<extends>>
