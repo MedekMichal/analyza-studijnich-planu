@@ -180,7 +180,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_001)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L10))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L10))_
 
 ## Předpoklady
 
@@ -220,7 +220,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_002)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L11))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L11))_
 
 ## Předpoklady
 
@@ -266,7 +266,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_003)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L12))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L12))_
 
 ## Předpoklady
 
@@ -312,7 +312,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_004)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L13))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L13))_
 
 ## Předpoklady
 
@@ -352,7 +352,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_005)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L14))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L14))_
 
 ## Předpoklady
 
@@ -392,7 +392,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_006)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L15))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L15))_
 
 ## Předpoklady
 
@@ -426,7 +426,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_007)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L16))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L16))_
     
 ## Předpoklady
 
@@ -465,7 +465,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_008)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L17))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L17))_
     
 ## Předpoklady
 
@@ -501,7 +501,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_009)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L18))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L18))_
 
 ## Předpoklady
 
@@ -559,7 +559,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_010)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L19))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L19))_
 
 ## Předpoklady
 
@@ -617,7 +617,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_011)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L20))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L20))_
 
 ## Předpoklady
 
@@ -658,7 +658,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_012)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L21))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L21))_
 
 ## Předpoklady
 
@@ -696,7 +696,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_013)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L22))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L22))_
 
 ## Předpoklady
 
@@ -735,7 +735,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_014)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L23))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L23))_
 
 ## Předpoklady
 
@@ -774,7 +774,7 @@ Rozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_015)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L24))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L24))_
 
 ## Předpoklady
 
@@ -818,7 +818,7 @@ Rozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_016)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L25))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L25))_
 
 ## Předpoklady
 
@@ -855,7 +855,7 @@ Rozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_017)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L26))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L26))_
 
 ## Předpoklady
 
@@ -896,7 +896,7 @@ Rozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_018)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L27))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L27))_
 
 ## Předpoklady
 
@@ -952,7 +952,7 @@ Rozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_019)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L28))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L28))_
 
 ## Předpoklady
 
@@ -986,7 +986,7 @@ Nerozhodnutý student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_020)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L29))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L29))_
 
 ## Předpoklady
 
@@ -1021,7 +1021,7 @@ Student
 ## Související diagramy
 
 ![Use Case Diagram](https://raw.githubusercontent.com/MedekMichal/analyza-studijnich-planu/refs/heads/main/documentation/use-case-diagram.svg#elem_UC_021)  
-_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/2329876530b71f0e725a455d2d47774e21708991/documentation/use-case-diagram.plantuml#L30))_
+_(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c56b1aae48f8a95b3fbef3a2772ff441ab265/documentation/use-case-diagram.plantuml#L30))_
 
 ## Předpoklady
 
