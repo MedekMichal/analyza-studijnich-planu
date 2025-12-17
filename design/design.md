@@ -77,35 +77,61 @@ V lokální databázi RecSISu se vytvoří tabulky pro ukládání:
 Doporučené předměty ke státnicím
 - na tom se pracuje
 
+# RecSIS struktura
+
+všechny balíčky reprezentující stránku mají jednotnou strukturu:
+- `view.templ` - frontend šablona
+- `server.go` - router s handlery a jejich logikou
+- `database.go` - databázové operace volané ze serveru
+- `model.go` - datové struktury naplňované z databáze s jejich metodami
+- `texts.go` - textové konstanty používané na stránce (lokalizace)
+
+Někde je navíc:
+- `search.go` - logika pro vyhledávání a filtrování pomocí Meilisearch
+
+`server.go` obsahuje interfaces:
+- ty jsou injektovány z `main.go`
+- jsou v `Server` struktuře
+
 # UC-001: Upozornění na rekvizity ve vlastním plánu
 
 Jedná se o rozšíření upozornění na stránce vlastního plánu (= blueprint) v systému RecSIS.
 Samotné zobrazení je už implementováno, stačí doplnit logiku pro kontrolu rekvizit a generování textu upozornění.
 - balíček: `blueprint`, soubor: `webapp/blueprint/server.go`, funkce: `generateWarnings`
 
-Při načtení vlastního plánu se pro každý předmět:
-1. načtou jeho prerekvizity, korekvizity a neslučitelnosti z tabulky `preq`
-2. zkontroluje, zda jsou rekvizity platné pomocí sloupců `ReqOd` a `ReqDo`
-3. rekvizity se spárují s předmětem co je naplňuje v tabulce `povinn`
-4. pokud libovolný předmět realizující rekvizitu má sloupec `pskupina == 'M'` (malá skupina), tak
-    - nahradí se disjunkcí rekvizit z tabulky `pskup`
-    - zkontroluje se, zda jsou tyto rekvizity platné pomocí sloupců `PSOd` a `PSDo`
+Data:
+- tabulka `preq` - seznam rekvizit pro předměty
+- tabulka `povinn` - předměty
+    - sloupec `pskupina` - informace o tom, zda předmět zastupuje skupinu
+- tabulka `pskup` - předmětové skupiny
+- je vhodné načíst rekurzivní rekvizity rovnou k předmětu v ELT procesu
+    - rekurzivní SQL dotaz
+    - kontrolovat platnost pomocí sloupců 
+        - `preq`: `ReqOd`, `ReqDo`
+        - `pskup`: `PSOd`, `PSDo`
     - rekvizity se spárují s předmětem co je naplňuje v tabulce `povinn`
-    - tento krok se opakuje, dokud `pskupina IS NULL` (nebo `pskupina == 'V'`, což ale není používáno = ignorujeme)
-5. proběhne kontrola rekvizit
+    - pokud libovolný předmět realizující rekvizitu má sloupec `pskupina == 'M'` (malá skupina), tak
+        - nahradí se disjunkcí rekvizit z tabulky `pskup`
+        - zkontroluje se, zda jsou tyto rekvizity platné pomocí sloupců `PSOd` a `PSDo`
+        - rekvizity se spárují s předmětem co je naplňuje v tabulce `povinn`
+        - tento krok se opakuje, dokud `pskupina IS NULL` (nebo `pskupina == 'V'`, což ale není používáno = ignorujeme tyto předměty)
+
+Při načtení vlastního plánu se pro každý předmět:
+1. načtou jeho prerekvizity, korekvizity a neslučitelnosti ze stejné tabulky
+2. proběhne kontrola rekvizit
     - pro prerekvizity se zkontroluje, jestli je splňuje nějaký předmět naplánovaný v předchozích semestrech
     - pro korekvizity se zkontroluje, jestli je splňuje nějaký předmět naplánovaný ve stejném nebo předchozích semestrech
     - pro neslučitelnosti se zkontroluje, jestli je nesplňuje nějaký předmět naplánovaný v stejném nebo předchozích semestrech
-6. pokud nějaká rekvizita není splněna, zobrazí se u předmětu:
+3. pokud nějaká rekvizita není splněna, zobrazí se u předmětu:
     - ikona červeného vykřičníku
     - při najetí myší na ikonu se zobrazí detailní informace o nesplněných podmínkách s informacemi o tom, které předměty je můžou splnit
 
 Pravidla:
-- Prerekvizity - seznam předmětů, které musí mít student splněné, aby bylo možno provést zápis - výběr z číselníku předmětů - lze i mezifakultně
-- Korekvizity - seznam předmětů, které musí mít student zapsány nejpozději současně s daným předmětem . Při kontrole plnění na konci roku se korekvizity berou stejně jako prerekvizity. - výběr z číselníku předmětů - lze i mezifakultně
-- Neslučitelnost - seznam předmětů, které nesmějí být zapsány současně nebo před daným předmětem (například z důvodů lehčí úrovně výuky, než má již absolvovaný předmět) - výběr z číselníku předmětů - lze i mezifakultně
+- Prerekvizity - seznam předmětů, které musí mít student splněné, aby bylo možno provést zápis
+- Korekvizity - seznam předmětů, které musí mít student zapsány nejpozději současně s daným předmětem
+- Neslučitelnost - seznam předmětů, které nesmějí být zapsány současně nebo před daným předmětem
 
-**Složitost**: nízká
+**Složitost**: střední
 **Přínos**: střední
 **Priorita**: vysoká
 
@@ -129,6 +155,7 @@ K filtrování i vyhledávání lze použít:
     - search engine
     - používá se v RecSISu
     - existuje infrastruktura
+    - bude se používat
 
 Je potřeba získat data o plánech:
 - v elt procesu je potřeba přidat
@@ -136,6 +163,7 @@ Je potřeba získat data o plánech:
     - tabulku `obor` s informacemi o oborech
     - tabulku `nobor` s informacemi o oborech SIMS
     - tabulku `fdoparam` s informacemi o platnosti oboru
+    - filtrované na relevantní plány
 - seznam plánů:
     - získat pomocí: `select * from plany where obor in (select obor from fdoparam where splati is not null)`
     - omezit se na:
@@ -326,7 +354,7 @@ V datech existuje informace o procentu volitelných kreditů za úsek studia
 
 **Složitost**: střední
 **Přínos**: vysoký
-**Priorita**: vysoká
+**Priorita**: střední
 
 # UC-008: Detail předmětu v zobrazeném studijním plánu
 
@@ -352,8 +380,8 @@ Je potřeba implementovat handler v serveru:
 Je třeba implementovat FE:
 - soubor `webapp/degreeplan/view.templ`
 - kódy a názvy plánů nahoře vedle sebe
+    - odkazy na detaily studijních plánů (`GET /plan/{code}`)
 - pak kreditové statistiky a statistiky studentů pro oba plány
-- odkazy na detaily studijních plánů (lze z kódu/názvu plánu `GET /plan/{code}`)
 - možnosti designu:
     - plán vpravo a plán vlevo
         - nejprve stejné předměty - tabulka, zvýraznit povinné, povinně volitelné, ke státnicím
@@ -379,8 +407,9 @@ Je třeba implementovat FE:
         - má smysl více řešit podobnosti než rozdíly
     - vhodné by bylo implementovat první dvě možnosti a uživatel by si mohl přepínat mezi zobrazeními
         - buď je plán strukturovaný, nebo je to jen seznam předmětů
+        - třetí pro mobilní zařízení
 
-data:
+Data:
 - kódy a názvy plánů jsou v tabulce `plany`
 - stačí načíst předměty obout plánů
     - s informacemi o tom, zda je předmět povinný, povinně volitelný, doporučený ke státnicím
@@ -449,6 +478,7 @@ Alternativně už měl plán zvolený a chce ho odznačit.
     - `DELETE /user-plan`
         - PARAM: žádné
         - smaže informaci o zvoleném plánu uživatele
+        - dojde k přesměrování na detail daného plánu `/plan/{code}`
 
 FE se upraví v zobrazení plánu, ale minimálně, v souboru:
 - `webapp/degreeplan/view.templ`
@@ -480,15 +510,19 @@ Na FE se zobrazí v detailu plánu:
 - jako tabulka s sloupci pro každý akademický rok
 - řádky pro studující a dokončující
 - pak průměrný počet let studia
-- pak pro bc kam pokračují do nmgr (seznam plánů a počet studentů)
-- pak pro nmgr odkud přišli z bc (seznam plánů a počet studentů)
+- pak
+    - pro bc kam pokračují do nmgr (seznam plánů a počet studentů)
+    - pro nmgr odkud přišli z bc (seznam plánů a počet studentů)
 
 Je možné implementovat jako vlastní endpoint v serveru:
 - soubor `webapp/degreeplan/server.go`
 - lazy load v detailu plánu
+- zbytečné, je to málo dat, zbytečná komplikace
 
 Alternativně se to může načítat rovnou s detailem plánu:
-- pokud jsou data předpočítaná, tak to bude rychlé
+- data budou uložená s metadaty plánu
+- není jich moc
+- vhodné řešení
 
 **Složitost**: střední
 **Přínos**: střední
@@ -508,6 +542,7 @@ Design jako u detailu předmětu v RecSISu:
     - uživatelé anonymní
     - datum přidání
     - text komentáře
+    - teoreticky možnost nahlásit nevhodný komentář (mimo rozsah)
 
 Aby komentáře nezabraly moc místa, je možné je načítat lazy loadem:
 - nejprve se načte jen prvních 5 komentářů
@@ -532,17 +567,13 @@ Vhodné řešení:
 
 **Složitost**: nízká
 **Přínos**: nízký
-**Priorita**: střední
+**Priorita**: nízká
 
 # UC-015: Vložení doporučeného průchodu do vlastního plánu
 
-Data o doporučeném průchodu jsou již dostupná v datech studijního plánu.
-
-Pokud není doporučený průchod dostupný, tak se tlačítko nezobrazuje.
-
-Pokud je vlastní plán uživatele (blueprint) prázdný, tak se doporučený průchod automaticky přidá (ne přepíše)
-- problém s race condition, pokud uživatel mezitím něco přidá do plánu
-- problém s načtením předchozího stavu stránky, kde jsou neaktuální data
+Zobrazení doporučeného průchodu plánu je řešeno v UC-021:
+- řeší se i jak získat data o doporučeném průchodu
+- data dostupná v datech studijního plánu
 
 Je potřeba implementovat FE:
 - soubor `webapp/degreeplan/view.templ`
@@ -575,6 +606,13 @@ Přidat znamená:
 - ošetřit konflikty předmětů
     - pokud je předmět již v plánu uživatele, tak ho nepřidávat znovu
 
+Pokud není doporučený průchod dostupný, tak se tlačítko nezobrazuje.
+
+Pokud je vlastní plán uživatele (blueprint) prázdný:
+- po stisknutí tlačítka se doporučený průchod automaticky přidá (ne přepíše)
+- problém s race condition, pokud uživatel mezitím něco přidá do plánu
+- problém s načtením předchozího stavu stránky, kde jsou neaktuální data
+
 **Složitost**: střední
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -591,11 +629,13 @@ Jsou 3 řešení získání dat:
     - bylo by nutné získat data pro všechny plány
         - problém je, že Karolínka je pro studijní obory, ne pro konkrétní plány
         - je nutné spárovat
-        - bc i nmgr plány
-        - všechnu oblasti vzdělávání
-    - zdá se, že doporučené předměty ke státnicím má jen Informatika
+        - je nutné sehnat data pro všechny plány
+            - bc i nmgr
+            - všechny oblasti vzdělávání
+            - zdá se, že doporučené předměty ke státnicím má jen Informatika
+                - lze se omezit jen na ni
 - Komunikace s Petrem Jedelským:
-    - slíbená tabulka v MFF databázi, kam dáme mock data
+    - slíbená tabulka v MFF databázi, kam dáme data jen pro pár plánů
     - napojit se na ni v ELT procesu
     - získat data
     - sloupce tabulky:
@@ -654,7 +694,7 @@ Na zobrazení grafu použít nějakou JS knihovnu:
 
 Cytoscape.js se jeví jako vhodná knihovna:
 - automatický výpočet rozložení grafu bez nutnosti ručního určování pozic uzlů
-- přímá podpora orientovaných grafů vhodná pro reprezentaci prerekvizit
+- přímá podpora orientovaných grafů vhodná pro reprezentaci rekvizit
 - možnost vizuálně odlišit jednotlivé typy rekvizit pomocí stylů hran (barva, typ čáry, šipky)
 - interaktivní zobrazení umožňující přibližování, posun grafu a kliknutí na uzly
 - okamžité filtrování hran podle typu rekvizity bez nutnosti znovunačtení stránky
@@ -666,7 +706,7 @@ Cytoscape.js se jeví jako vhodná knihovna:
 
 **Složitost**: střední
 **Přínos**: střední
-**Priorita**: nízká
+**Priorita**: střední
 
 # UC-018: Hodnocení a komentování plánů
 
@@ -699,20 +739,22 @@ Data:
     - hodnocení
         - uživatel, kód plánu, hodnocení (1-10)
     - komentáře
-        - uživatel, kód plánu, text komentáře, datum přidání
+        - uživatel, kód plánu, text komentáře, datum přidání, počet nahlášení
 
 Problém je moderace komentářů:
 - vhodné přidat funkci, která bude kontrolovat nevhodný obsah
 - možné použít externí službu pro detekci nevhodného obsahu
 - důležité je obsah escapovat, aby nešlo vložit škodlivý kód
 - možné řešení
+    - escapovat obsah
     - jednoduchý filtr zakázaných slov
     - uživatelé mohou nahlásit nevhodný komentář (tlačítko "Nahlásit")
     - programátor může ručně smazat nevhodné komentáře
     - komentáře se nepublikují okamžitě, ale až po schválení (moderování)
         - to lze přes OpenAI Moderation API
-- omezit délku komentáře na rozumnou hodnotu (např. 1000 znaků)
+    - omezit délku komentáře na rozumnou hodnotu (např. 1000 znaků)
 
+Pokud nebude implementovaný tento požadavek, nemá smysl implementovat UC-014.
 
 **Složitost**: vysoká
 **Přínos**: střední
@@ -763,15 +805,18 @@ Při zobrazení detailu plánu:
 
 # UC-021: Zobrazení doporučeného průchodu plánu
 
-Tato data jsou již dostupná v datech studijního plánu.
+Tato data jsou již dostupná v datech studijního plánu:
 - funkce `study_plan.stud_plan(plan_code, year)` vrací seznam předmětů s jejich doporučeným semestrem
     - `bloc_grade`, `bloc_semester` určují doporučený ročník a semestr
 
 Podle toho postavit zobrazení doporučeného průchodu plánu:
 - podobně jako v Blueprintu v RecSISu
 - tabulka se semestry a předměty v nich
+    - detail předmětu jako v ostatních tabulkách
 
-Vhodné načíst rovnou s detailem plánu.
+Vhodné načíst rovnou s detailem plánu:
+- data budou uložená přímo u plánu, takže se vždy načtou
+- není jich moc
 
 **Složitost**: střední
 **Přínos**: vysoký 
