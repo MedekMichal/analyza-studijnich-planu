@@ -131,6 +131,7 @@ Pravidla:
 - Korekvizity - seznam předmětů, které musí mít student zapsány nejpozději současně s daným předmětem
 - Neslučitelnost - seznam předmětů, které nesmějí být zapsány současně nebo před daným předmětem
 
+**Pracnost**: 2 MD
 **Složitost**: střední
 **Přínos**: střední
 **Priorita**: vysoká
@@ -234,6 +235,7 @@ Pro víc výsledků než se vejde na stránku, implementovat stránkování (neb
 - má smysl stránkovat, když uživatel prakticky musí vyhledávat nebo hodně filtrovat?
 - nezajímají nás všechny plány, ale jen konkrétní
 
+**Pracnost**: 7 MD
 **Složitost**: vysoká
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -278,6 +280,7 @@ Co je možné dělat v detailu plánu je popsáno v use-casech:
 - přejít na vyhledávání plánů `GET /search`
 - porovnat s jiným plánem `GET /search` s zobrazeným plánem jako parametr pro porovnání
 
+**Pracnost**: 2 MD
 **Složitost**: střední
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -308,6 +311,7 @@ Text bude obsahovat informace o:
     - jak odlišit
     - je možné sepsat texty a ty ručně přiřadit k plánům
 
+**Pracnost**: 1 MD
 **Složitost**: nízká
 **Přínos**: nízký
 **Priorita**: nízká
@@ -352,6 +356,7 @@ vše je možné předpočítat při načtení plánu a uložit do databáze:
 V datech existuje informace o procentu volitelných kreditů za úsek studia
 - `plany` sloupec `ProcKredVP`
 
+**Pracnost**: 1,5 MD
 **Složitost**: střední
 **Přínos**: vysoký
 **Priorita**: střední
@@ -364,6 +369,7 @@ Je potřeba doplnit:
 
 Zdali je předmět doporučen ke státnicím se řeší v UC-016.
 
+**Pracnost**: 0,5 MD
 **Složitost**: nízká
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -423,6 +429,7 @@ Data:
 - načíst statistiky studentů obou plánů
     - řeší se v UC-013
 
+**Pracnost**: 5 MD
 **Složitost**: vysoká
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -459,6 +466,12 @@ Zároveň se zobrazí relevantní předměty:
         - aplikovat filtry
         - pak dotaz na plány obsahující všechny zadané předměty
 
+- vyhledávání plánů jinak než podle jejich přímých dat:
+    - lze použít AI
+    - lze použít doporučovací systém
+    - obojí je mimo rozsah
+
+**Pracnost**: 4 MD
 **Složitost**: vysoká 
 **Přínos**: nízký
 **Priorita**: nízká
@@ -490,6 +503,7 @@ V databázi je potřeba vytvořit tabulku pro ukládání zvoleného plánu uži
 - RecSIS už podporuje, upravit podle potřeby
     - tabulka `studies`
 
+**Pracnost**: 0,5 MD
 **Složitost**: nízká 
 **Přínos**: střední
 **Priorita**: vysoká
@@ -524,6 +538,7 @@ Alternativně se to může načítat rovnou s detailem plánu:
 - není jich moc
 - vhodné řešení
 
+**Pracnost**: 2 MD
 **Složitost**: střední
 **Přínos**: střední
 **Priorita**: střední
@@ -565,6 +580,7 @@ Vhodné řešení:
 - pak stránkování komentářů
     - další endpoint pro načtení komentářů s parametry offset a limit
 
+**Pracnost**: 1 MD
 **Složitost**: nízká
 **Přínos**: nízký
 **Priorita**: nízká
@@ -613,6 +629,7 @@ Pokud je vlastní plán uživatele (blueprint) prázdný:
 - problém s race condition, pokud uživatel mezitím něco přidá do plánu
 - problém s načtením předchozího stavu stránky, kde jsou neaktuální data
 
+**Pracnost**: 3 MD
 **Složitost**: střední
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -655,6 +672,7 @@ Data se uloží do lokální databáze RecSISu:
 Na FE se v detailu plánu označí předměty doporučené ke státnicím:
 - ikona (hvězdička, diplom, ...)
 
+**Pracnost**: 4 MD
 **Složitost**: vysoká
 **Přínos**: vysoký
 **Priorita**: střední
@@ -704,6 +722,7 @@ Cytoscape.js se jeví jako vhodná knihovna:
 - dobrá škálovatelnost pro grafy tvořené menšími nezávislými komponentami
 - snadná integrace do stávající webové aplikace bez zásadních architektonických změn
 
+**Pracnost**: 3 MD
 **Složitost**: střední
 **Přínos**: střední
 **Priorita**: střední
@@ -756,6 +775,7 @@ Problém je moderace komentářů:
 
 Pokud nebude implementovaný tento požadavek, nemá smysl implementovat UC-014.
 
+**Pracnost**: 4 MD
 **Složitost**: vysoká
 **Přínos**: střední
 **Priorita**: nízká
@@ -776,6 +796,7 @@ Zobrazí se detail plánu stejně jako v UC-005:
 - u názvu svítí ikona, že je to zvolený plán
 - je možné to zjednodušit a u každého zobrazení povolit všechny funkce
 
+**Pracnost**: 1 MD
 **Složitost**: nízká
 **Přínos**: vysoký
 **Priorita**: vysoká
@@ -799,6 +820,7 @@ Při zobrazení detailu plánu:
     - omezit počet záznamů na posledních 5
         - pokud by byl limit překročen, tak smazat/přepsat nejstarší záznam
 
+**Pracnost**: 1,5 MD
 **Složitost**: nízká
 **Přínos**: střední
 **Priorita**: nízká
@@ -818,6 +840,7 @@ Vhodné načíst rovnou s detailem plánu:
 - data budou uložená přímo u plánu, takže se vždy načtou
 - není jich moc
 
+**Pracnost**: 2 MD
 **Složitost**: střední
 **Přínos**: vysoký 
 **Priorita**: vysoká
