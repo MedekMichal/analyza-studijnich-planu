@@ -267,15 +267,15 @@ Upravit databázi:
 
 Ostatní detaily plánu jsou rozepsané v use-casech:
 - UC-006: Úvodní text u plánu
-- UC-007: Kreditové statistiky u detailu plánu
-- UC-008: Detail předmětu v zobrazeném studijním plánu
+- UC-007: Zobrazení kreditových statistik
+- UC-008: Detail předmětu v zobrazeném plánu
 - UC-013: Zobrazení statistik o studentech plánu
-- UC-016: Zobrazení předmětů doporučených ke státnicím
+- UC-016: Zobrazení předmětů doporučených ke státním závěrečným zkouškám
 - UC-017: Zobrazení mapy rekvizit
-- UC-021: Zobrazení doporučeného průchodu plánu
+- UC-021: Zobrazení doporučeného průběhu studia
 
 Co je možné dělat v detailu plánu je popsáno v use-casech:
-- UC-014: Procházení hodnocení a komentářů plánů
+- UC-014: Procházení hodnocení a komentářů plánu
 - UC-012: Označení plánu za zvolený
 - přejít na vyhledávání plánů `GET /search`
 - porovnat s jiným plánem `GET /search` s zobrazeným plánem jako parametr pro porovnání
@@ -316,7 +316,7 @@ Text bude obsahovat informace o:
 **Přínos**: nízký
 **Priorita**: nízká
 
-# UC-007: Kreditové statistiky u detailu plánu
+# UC-007: Zobrazení kreditových statistik
 
 Tímto je myšleno zobrazení počtu:
 - celkových kreditů
@@ -361,7 +361,7 @@ V datech existuje informace o procentu volitelných kreditů za úsek studia
 **Přínos**: vysoký
 **Priorita**: střední
 
-# UC-008: Detail předmětu v zobrazeném studijním plánu
+# UC-008: Detail předmětu v zobrazeném plánu
 
 Většina věcí je již implementována v RecSISu.
 Je potřeba doplnit:
@@ -375,7 +375,7 @@ Zdali je předmět doporučen ke státnicím se řeší v UC-016.
 **Priorita**: vysoká
 
 # UC-009: Zobrazení rozdílů mezi dvěma plány
-# UC-010: Zobrazení společných předmětů mezi plány
+# UC-010: Zobrazení společných předmětů mezi dvěma plány
 
 Tyto požadavky budou řešeny společně, protože se jedná o kombinaci funkcí na stránce porovnání plánů.
 - v zobrazení budou vidět jak rozdíly, tak společné předměty
@@ -543,7 +543,7 @@ Alternativně se to může načítat rovnou s detailem plánu:
 **Přínos**: střední
 **Priorita**: střední
 
-# UC-014: Procházení hodnocení a komentářů plánů
+# UC-014: Procházení hodnocení a komentářů plánu
 
 Samotný vznik hodnocení a komentářů je řešen v UC-018.
 
@@ -585,7 +585,7 @@ Vhodné řešení:
 **Přínos**: nízký
 **Priorita**: nízká
 
-# UC-015: Vložení doporučeného průchodu do vlastního plánu
+# UC-015: Vložení doporučeného průběhu studia do vlastního plánu
 
 Zobrazení doporučeného průchodu plánu je řešeno v UC-021:
 - řeší se i jak získat data o doporučeném průchodu
@@ -634,7 +634,7 @@ Pokud je vlastní plán uživatele (blueprint) prázdný:
 **Přínos**: vysoký
 **Priorita**: vysoká
 
-# UC-016: Zobrazení předmětů doporučených ke státnicím
+# UC-016: Zobrazení předmětů doporučených ke státním závěrečným zkouškám
 
 Data o doporučených předmětech ke státnicím nejsou strojově dostupná.
 
@@ -727,7 +727,7 @@ Cytoscape.js se jeví jako vhodná knihovna:
 **Přínos**: střední
 **Priorita**: střední
 
-# UC-018: Hodnocení a komentování plánů
+# UC-018: Hodnocení a komentování plánu
 
 Na přidávání a mazání hodnocení a komentářů je potřeba implementovat handlery:
 - soubor `webapp/degreeplan/server.go`
@@ -825,7 +825,7 @@ Při zobrazení detailu plánu:
 **Přínos**: střední
 **Priorita**: nízká
 
-# UC-021: Zobrazení doporučeného průchodu plánu
+# UC-021: Zobrazení doporučeného průběhu studia
 
 Tato data jsou již dostupná v datech studijního plánu:
 - funkce `study_plan.stud_plan(plan_code, year)` vrací seznam předmětů s jejich doporučeným semestrem

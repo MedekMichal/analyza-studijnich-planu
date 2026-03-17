@@ -13,21 +13,21 @@ rectangle "RecSIS - Studijní plány" {
     usecase "Filtrování plánů" as UC_004
     usecase "Zobrazení plánu" as UC_005
     usecase "Úvodní text u plánu" as UC_006
-    usecase "Kreditové statistiky\nu detailu plánu" as UC_007
-    usecase "Detail předmětu v zobrazeném\nstudijním plánu" as UC_008
+    usecase "Zobrazení kreditových statistik" as UC_007
+    usecase "Detail předmětu\nv zobrazeném plánu" as UC_008
     usecase "Zobrazení rozdílů mezi\ndvěma plány" as UC_009
-    usecase "Zobrazení společných\npředmětů mezi plány" as UC_010
+    usecase "Zobrazení společných předmětů\nmezi dvěma plány" as UC_010
     usecase "Vyhledávání plánů podle\npředmětů" as UC_011
     usecase "Označení plánu za zvolený" as UC_012
     usecase "Zobrazení statistik\no studentech plánu" as UC_013
-    usecase "Procházení hodnocení\na komentářů plánů" as UC_014
-    usecase "Vložení doporučeného průchodu\ndo vlastního plánu" as UC_015
-    usecase "Zobrazení předmětů doporučených\nke státnicím" as UC_016
+    usecase "Procházení hodnocení\na komentářů plánu" as UC_014
+    usecase "Vložení doporučeného průběhu\nstudia do vlastního plánu" as UC_015
+    usecase "Zobrazení předmětů doporučených\nke státním závěrečným zkouškám" as UC_016
     usecase "Zobrazení mapy rekvizit" as UC_017
     usecase "Hodnocení a komentování plánu" as UC_018
     usecase "Zobrazení zvoleného plánu" as UC_019
     usecase "Historie zobrazených\nplánů" as UC_020
-    usecase "Zobrazení doporučeného\nprůchodu plánu" as UC_021
+    usecase "Zobrazení doporučeného\nprůběhu studia" as UC_021
 }
 
 AC_NS -l-|> AC_S

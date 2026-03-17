@@ -413,7 +413,7 @@ N/A
 - Systém zobrazil úvodní text studijního plánu.
 - Student je informován o doporučených předmětech ke státnicím, harmonogramu studia a možnostech navázání bakalářské/diplomové práce.
 
-### UC-007: Kreditové statistiky u detailu plánu
+### UC-007: Zobrazení kreditových statistik
 
 ## Aktéři
 
@@ -452,7 +452,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c5
 - Systém zobrazil kreditové statistiky studijního plánu.
 - Student má přehled o kreditové volnosti daného studijního plánu. 
 
-### UC-008: Detail předmětu v zobrazeném studijním plánu
+### UC-008: Detail předmětu v zobrazeném plánu
 
 ## Aktéři
 
@@ -546,7 +546,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c5
 - Systém identifikoval a přehledně prezentoval rozdíly mezi studijními plány.
 - Nerozhodnutý student má přehled o rozdílech mezi dvěma studijními plány, což mu pomáhá při rozhodování o volbě specializace.
 
-### UC-010: Zobrazení společných předmětů mezi plány
+### UC-010: Zobrazení společných předmětů mezi dvěma plány
 
 ## Aktéři
 
@@ -722,7 +722,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c5
 - Systém zobrazil statistiky o studijním plánu.
 - Nerozhodnutý student má přehled o počtu zapsaných studentů, počtu ukončených studentů a průměrné délce studia pro daný studijní plán.
 
-### UC-014: Procházení hodnocení a komentářů plánů
+### UC-014: Procházení hodnocení a komentářů plánu
 
 ## Aktéři
 
@@ -761,7 +761,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c5
 - Systém zobrazil hodnocení a komentáře k danému studijnímu plánu.
 - Nerozhodnutý student má přehled o pohledech a zkušenostech od ostatních studentů.
 
-### UC-015: Vložení doporučeného průchodu do vlastního plánu
+### UC-015: Vložení doporučeného průběhu studia do vlastního plánu
 
 ## Aktéři
 
@@ -805,7 +805,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c5
 - Doporučený průchod studijním plánem byl úspěšně vložen do vlastního plánu rozhodnutého studenta.
 - Rozhodnutý student může nyní plánovat své studium podle doporučeného průchodu.
 
-### UC-016: Zobrazení předmětů doporučených ke státnicím
+### UC-016: Zobrazení předmětů doporučených ke státním závěrečným zkouškám
 
 ## Aktéři
 
@@ -883,7 +883,7 @@ _(viz [zdroj](https://github.com/MedekMichal/analyza-studijnich-planu/blob/5e5c5
 - Systém zobrazil vizuální mapu rekvizit.
 - Rozhodnutý student má přehled o prerekvizitách, korekvizitách a neslučitelnostech, pro lepší pochopení vztahů mezi předměty ve studijním plánu.
 
-### UC-018: Hodnocení a komentování plánů
+### UC-018: Hodnocení a komentování plánu
 
 ## Aktéři
 
@@ -1008,7 +1008,7 @@ N/A
 - Systém zobrazil historii zobrazených plánů.
 - Nerozhodnutý student má přehled o svých nedávno zobrazených studijních plánech pro snadný přístup.
 
-### UC-021: Zobrazení doporučeného průchodu plánu
+### UC-021: Zobrazení doporučeného průběhu studia
 
 ## Aktéři
 
